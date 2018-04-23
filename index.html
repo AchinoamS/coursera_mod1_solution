@@ -12,17 +12,15 @@
         font-size: 1.3em;
         font-weight: bold;
     }
-    
+
     .green {
         color: green;
-        border-style: solid;
-        border-color: green;
+        /*border-color: green;*/
     }
-    
+
     .red {
         color: red;
-        border-style: solid;
-        border-color: red;
+        /*border-color: red;*/
     }
     </style>
 </head>
@@ -31,7 +29,7 @@
     <div class="container" ng-controller="LunchCheckController">
         <h1>Lunch Checker</h1>
         <div class="form-group">
-            <input id="lunch-menu" type="text" placeholder="list comma separated dishes you usually have for lunch" class="form-control" ng-model="ItemsList">
+            <input id="lunch-menu" type="text" placeholder="list comma separated dishes you usually have for lunch" class="form-control" ng-class="myStyle" ng-model="ItemsList">
         </div>
         <div class="form-group">
             <button class="btn btn-default" ng-click="CheckNumItems()">Check If Too Much</button>
